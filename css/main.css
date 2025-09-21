@@ -116,17 +116,23 @@ body::before {
 
 
 .titulo {
-  margin-bottom: 180px;
+  position: absolute;
+  bottom: 40px; /* pegado fijo al fondo */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%; /* para que no se salga de la pantalla */
+  font-size: 18px; /* tamaño más manejable en móvil */
   font-family: "Arial Narrow", Arial, sans-serif;
   color: rgb(255, 217, 0);
-  position: absolute;
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 1.5;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
-  text-align: center;
   z-index: 101;
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
