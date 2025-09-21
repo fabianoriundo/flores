@@ -1723,6 +1723,8 @@ h1 {
   }
 }
 
+/* Elimina o comenta este bloque para que no cambie el diseño en móvil */
+/*
 @media only screen and (max-width: 600px) {
   body {
     align-items: flex-start;
@@ -1784,3 +1786,4 @@ h1 {
     min-width: 100vw;
   }
 }
+*/

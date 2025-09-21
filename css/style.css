@@ -108,7 +108,8 @@ body {
     color: #111;
 }
 
-/* Responsive */
+/* Elimina o comenta este bloque para que no cambie el diseño en móvil */
+/*
 @media screen and (max-width: 574px) {
     body {
         min-height: 100vh;
@@ -150,3 +151,4 @@ body {
         text-align: center;
     }
 }
+*/
