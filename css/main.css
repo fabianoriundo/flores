@@ -1723,5 +1723,64 @@ h1 {
   }
 }
 
-
-/* Agregar más estilos según sea necesario */
+@media only screen and (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .titulo {
+    margin-bottom: 60px;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  #lyrics {
+    font-size: 12px;
+    margin-bottom: 120px;
+    letter-spacing: 2px;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .flowers {
+    margin-bottom: 0;
+    transform: scale(0.7);
+    left: 0;
+    right: 0;
+    width: 100vw;
+    min-width: 100vw;
+    position: relative;
+  }
+  .flower {
+    position: relative;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto;
+    bottom: 0;
+    transform: none !important;
+    width: 100vw;
+    min-width: 100vw;
+    z-index: 10;
+  }
+  .stars, .night {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  .flower__grass {
+    left: 0 !important;
+    bottom: 0 !important;
+    transform: none !important;
+    width: 100vw;
+    min-width: 100vw;
+  }
+}
