@@ -16,6 +16,10 @@ body {
     align-items: center;
     justify-content: center;
     background-color: black;
+
+    /* 👇 fuerza a que se vea igual en PC y móvil */
+    min-width: 1024px;   /* cámbialo si tu monitor es más grande (ej. 1366) */
+    overflow-x: auto;    /* deja scroll horizontal si la pantalla es más chica */
 }
 
 .botones {
@@ -108,47 +112,4 @@ body {
     color: #111;
 }
 
-/* Elimina o comenta este bloque para que no cambie el diseño en móvil */
-/*
-@media screen and (max-width: 574px) {
-    body {
-        min-height: 100vh;
-        height: auto;
-        padding: 0 5vw;
-        box-sizing: border-box;
-        justify-content: flex-start;
-        align-items: center;
-        overflow-x: hidden;
-    }
-    .greetings {
-        display: block;
-        font-size: 2.5rem;
-        font-weight: 800;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        word-break: break-word;
-    }
-    .description {
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-        text-align: center;
-        padding: 0 10px;
-        word-break: break-word;
-    }
-    .button {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 30px;
-    }
-    .botones, .botones a {
-        font-size: 1rem;
-        padding: 8px 18px;
-        border-radius: 40px;
-        width: auto;
-        min-width: 120px;
-        text-align: center;
-    }
-}
-*/
+/* 👇 Bloque responsive eliminado */

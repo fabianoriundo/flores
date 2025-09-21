@@ -19,6 +19,10 @@ body {
   overflow: hidden;
   perspective: 1000px;
   position: relative;
+
+  /* 👇 Fuerza que se vea igual en PC y móvil */
+  min-width: 1024px;  /* cámbialo si tu monitor es mayor (ej. 1366) */
+  overflow-x: auto;
 }
 
 /* Aurora boreal */
@@ -80,12 +84,8 @@ body::before {
     transform: translateX(-100vw) translateY(0) scaleX(0.5);
     opacity: 0;
   }
-  10% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
+  10% { opacity: 1; }
+  80% { opacity: 1; }
   100% {
     transform: translateX(100vw) translateY(30vh) scaleX(1.2);
     opacity: 0;
@@ -102,15 +102,7 @@ body::before {
   font-weight: bold;
   letter-spacing: 4px;
 }
-@media only screen and (max-width: 600px) {
-  /* Estilos específicos para dispositivos con un ancho máximo de 600px */
-  #lyrics {
-      font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
-      margin-bottom: 530px;
-      letter-spacing: 3px;
-  }
 
-}
 .titulo {
   margin-bottom: 180px;
   font-family: "Arial Narrow", Arial, sans-serif;
@@ -123,13 +115,10 @@ body::before {
   text-align: center;
   z-index: 101;
 }
+
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .night {
@@ -1723,67 +1712,25 @@ h1 {
   }
 }
 
-/* Elimina o comenta este bloque para que no cambie el diseño en móvil */
+/* Elimina o comenta estos bloques para que no cambie el diseño en móvil */
 /*
 @media only screen and (max-width: 600px) {
-  body {
-    align-items: flex-start;
-    justify-content: flex-start;
-    min-height: 100vh;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  .titulo {
-    margin-bottom: 60px;
-    font-size: 1em;
-    letter-spacing: 2px;
-    padding: 0 10px;
-    width: 100vw;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
   #lyrics {
-    font-size: 12px;
-    margin-bottom: 120px;
-    letter-spacing: 2px;
-    width: 100vw;
-    left: 0;
-    right: 0;
-    text-align: center;
+      font-size: 14px;
+      margin-bottom: 530px;
+      letter-spacing: 3px;
   }
   .flowers {
-    margin-bottom: 0;
-    transform: scale(0.7);
-    left: 0;
-    right: 0;
-    width: 100vw;
-    min-width: 100vw;
-    position: relative;
+      font-size: 14px;
+      margin-bottom: 35%;
+      letter-spacing: 3px;
+      transform: scale(1.0);
   }
-  .flower {
-    position: relative;
-    left: 0 !important;
-    right: 0 !important;
-    margin: 0 auto;
-    bottom: 0;
-    transform: none !important;
-    width: 100vw;
-    min-width: 100vw;
-    z-index: 10;
-  }
-  .stars, .night {
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 0;
-  }
-  .flower__grass {
-    left: 0 !important;
-    bottom: 0 !important;
-    transform: none !important;
-    width: 100vw;
-    min-width: 100vw;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+      font-size: 1.5em;
   }
 }
 */
