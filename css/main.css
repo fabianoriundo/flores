@@ -19,10 +19,6 @@ body {
   overflow: hidden;
   perspective: 1000px;
   position: relative;
-
-  /* 👇 Fuerza que se vea igual en PC y móvil */
-  min-width: 1024px;  /* cámbialo si tu monitor es mayor (ej. 1366) */
-  overflow-x: auto;
 }
 
 /* Aurora boreal */
