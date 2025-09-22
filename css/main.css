@@ -1685,56 +1685,21 @@ h1 {
 
 /* Media Queries para tamaños de pantalla diferentes */
 @media screen and (max-width: 600px) {
-  /* Estilos para pantallas pequeñas (Móviles) */
-  body {
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-  
+  /* Estilos para pantallas pequeñas */
   h1 {
       font-size: 1.5em;
-  }
-
-  .titulo {
-    font-size: 1.2em;
-    letter-spacing: 2px;
-    padding: 0 10px;
-    width: 100%;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-  
-  .flowers {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%) scale(0.9);
-  }
-
-  .flower {
-    position: relative;
-    transform: none !important;
-  }
-  
-  .night, .stars {
-    width: 100vw;
-    height: 100vh;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Estilos para pantallas medianas (Tablets) */
+  /* Estilos para pantallas medianas */
   h1 {
       font-size: 1.8em;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  /* Estilos para pantallas grandes (Escritorio) */
+  /* Estilos para pantallas grandes */
   h1 {
       font-size: 2em;
   }
