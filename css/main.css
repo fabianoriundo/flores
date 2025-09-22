@@ -1668,6 +1668,7 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f7f7f7;
   color: #333;
+  overflow-x: hidden !important; /* 🔥 evita que se achique en móviles */
 }
 
 /* Evitar que el body se limite a 1200px */
@@ -1690,11 +1691,34 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* --- Fix global para elementos que causan desborde en móviles --- */
+.flowers,
+.flower,
+.long-g,
+.titulo {
+  max-width: 100% !important;
+  left: auto;
+  right: auto;
+}
+
 /* Media Queries para tamaños de pantalla diferentes */
 @media screen and (max-width: 600px) {
   /* Estilos para pantallas pequeñas */
   h1 {
     font-size: 1.5em;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* 🔥 Reubicar elementos que se salen del viewport */
+  .long-g {
+    left: 0 !important;
+    transform: scale(0.7); /* opcional: reduce tamaño */
+  }
+
+  .flower {
+    left: 50% !important;
+    transform: translateX(-50%) scale(0.8);
   }
 }
 
@@ -1712,9 +1736,4 @@ h1 {
   }
 }
 
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
