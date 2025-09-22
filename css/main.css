@@ -1668,7 +1668,6 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #f7f7f7;
   color: #333;
-  overflow-x: hidden !important; /* 🔥 evita que se achique en móviles */
 }
 
 /* Evitar que el body se limite a 1200px */
@@ -1691,25 +1690,11 @@ h1 {
   margin-bottom: 20px;
 }
 
-
 /* Media Queries para tamaños de pantalla diferentes */
 @media screen and (max-width: 600px) {
   /* Estilos para pantallas pequeñas */
   h1 {
     font-size: 1.5em;
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  /* 🔥 Reubicar elementos que se salen del viewport */
-  .long-g {
-    left: 0 !important;
-    transform: scale(0.7); /* opcional: reduce tamaño */
-  }
-
-  .flower {
-    left: 50% !important;
-    transform: translateX(-50%) scale(0.8);
   }
 }
 
@@ -1726,42 +1711,4 @@ h1 {
     font-size: 2em;
   }
 }
-
-/* --- FIX ESPECÍFICO PARA MÓVILES --- */
-@media screen and (max-width: 600px) {
-  body {
-    overflow-x: hidden !important;
-  }
-
-  /* Centrar y reducir flores */
-  .flower--1,
-  .flower--2,
-  .flower--3 {
-    left: 50% !important;
-    transform: translateX(-50%) scale(0.8) !important;
-  }
-
-  /* Evitar que los tallos largos se salgan */
-  .long-g,
-  .long-g--1,
-  .long-g--2,
-  .long-g--3,
-  .long-g--4,
-  .long-g--5,
-  .long-g--6,
-  .long-g--7 {
-    left: 0 !important;
-    transform: scale(0.6) !important;
-  }
-
-  /* Ajustar título */
-  .titulo {
-    max-width: 95%;
-    font-size: 14px;
-    line-height: 1.3;
-    padding: 0 8px;
-    bottom: 20px;
-  }
-}
-
 
