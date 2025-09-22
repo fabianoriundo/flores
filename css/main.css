@@ -88,27 +88,6 @@ body::before {
   }
 }
 
-#lyrics {
-  width: 90%;              /* ancho máximo del texto */
-  max-width: 900px;        /* evita que se extienda infinito */
-  height: 100px;           /* reserva un alto fijo */
-  line-height: 1.4;        /* mejor lectura si hay 2 líneas */
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: white;
-  margin-bottom: 20%;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-
-  overflow: hidden;        /* no deja que el texto expanda el contenedor */
-  word-wrap: break-word;   /* corta palabras largas si es necesario */
-  white-space: normal;     /* permite saltos de línea */
-}
-
 
 
 .titulo {
