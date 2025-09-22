@@ -1704,13 +1704,18 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* Media Queries para pantallas más pequeñas */
+/* Media Queries para tamaños de pantalla diferentes */
 @media screen and (max-width: 600px) {
+  /* Estilos para pantallas pequeñas (Móviles) */
   body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     overflow-x: hidden;
+  }
+  
+  h1 {
+      font-size: 1.5em;
   }
 
   .titulo {
@@ -1735,46 +1740,23 @@ h1 {
     position: relative;
     transform: none !important;
   }
-
+  
   .night, .stars {
     width: 100vw;
     height: 100vh;
   }
 }
 
-/* Estilos para pantallas medianas */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos para pantallas medianas (Tablets) */
   h1 {
-    font-size: 1.8em;
+      font-size: 1.8em;
   }
 }
 
-/* Estilos para pantallas grandes */
 @media screen and (min-width: 1025px) {
+  /* Estilos para pantallas grandes (Escritorio) */
   h1 {
-    font-size: 2em;
+      font-size: 2em;
   }
 }
-
-/* Elimina o comenta estos bloques para que no cambie el diseño en móvil */
-/*
-@media only screen and (max-width: 600px) {
-  #lyrics {
-      font-size: 14px;
-      margin-bottom: 530px;
-      letter-spacing: 3px;
-  }
-  .flowers {
-      font-size: 14px;
-      margin-bottom: 35%;
-      letter-spacing: 3px;
-      transform: scale(1.0);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  h1 {
-      font-size: 1.5em;
-  }
-}
-*/
