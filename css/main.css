@@ -1712,3 +1712,45 @@ h1 {
   }
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* --- FIX ESPECÍFICO PARA MÓVILES --- */
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  /* Centrar y reducir flores */
+  .flower--1,
+  .flower--2,
+  .flower--3 {
+    left: 50% !important;
+    transform: translateX(-50%) scale(0.8) !important;
+  }
+
+  /* Evitar que los tallos largos se salgan */
+  .long-g,
+  .long-g--1,
+  .long-g--2,
+  .long-g--3,
+  .long-g--4,
+  .long-g--5,
+  .long-g--6,
+  .long-g--7 {
+    left: 0 !important;
+    transform: scale(0.6) !important;
+  }
+
+  /* Ajustar título */
+  .titulo {
+    max-width: 95%;
+    font-size: 14px;
+    line-height: 1.3;
+    padding: 0 8px;
+    bottom: 20px;
+  }
+}
