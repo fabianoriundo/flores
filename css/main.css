@@ -1657,7 +1657,6 @@ body::before {
   animation-play-state: paused !important;
 } /*# sourceMappingURL=main.css.map */
 
-
 /* Reset de estilos básicos */
 body, h1, p {
   margin: 0;
@@ -1671,7 +1670,15 @@ body {
   color: #333;
 }
 
-.container {
+/* Evitar que el body se limite a 1200px */
+body.container {
+  max-width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor real (si usas un div.container en otra parte) */
+div.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -1687,20 +1694,20 @@ h1 {
 @media screen and (max-width: 600px) {
   /* Estilos para pantallas pequeñas */
   h1 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   /* Estilos para pantallas medianas */
   h1 {
-      font-size: 1.8em;
+    font-size: 1.8em;
   }
 }
 
 @media screen and (min-width: 1025px) {
   /* Estilos para pantallas grandes */
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
 }
